@@ -14,6 +14,7 @@
   },
   "scripts": {
     "build": "rollup -c",
+    "now-build": "yarn build",
     "autobuild": "rollup -c -w",
     "dev": "run-p start:dev autobuild",
     "start": "sirv public",

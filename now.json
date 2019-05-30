@@ -1,0 +1,12 @@
+{
+  "name": "svelte-example",
+  "version": 2,
+  "alias": "svelte.karl.run",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": { "distDir": "public" }
+    }
+  ]
+}
