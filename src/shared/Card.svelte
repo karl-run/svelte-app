@@ -1,5 +1,6 @@
 <script>
   export let title;
+  export let height;
 </script>
 
 <style>
@@ -17,7 +18,7 @@
   }
 </style>
 
-<div class="card">
+<div class="card" transition:fade={{ intro: true }} style="height: {height}px">
   {#if title}
     <h3>{title}</h3>
   {/if}

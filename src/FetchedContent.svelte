@@ -1,8 +1,11 @@
 <script>
   import { onMount } from "svelte";
+  import { spring } from 'svelte/motion';
   import { fade } from "svelte/transition";
 
   import Card from "./shared/Card.svelte";
+
+  let height = spring(60)
 
   let items;
 
@@ -31,6 +34,7 @@
     const result = await response.json();
 
     items = result.data.ingredients;
+    height.set(60 + (items.length * 17))
   });
 </script>
 
@@ -38,7 +42,7 @@
 
 </style>
 
-<Card title="Dynamic content">
+<Card title="Dynamic content" height={$height}>
   {#if !items}
     <div>Loading..</div>
   {:else}
