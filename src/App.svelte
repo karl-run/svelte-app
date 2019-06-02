@@ -2,6 +2,7 @@
   import Header from "./Header.svelte";
   import SomeContent from "./SomeContent.svelte";
   import FetchedContent from "./FetchedContent.svelte";
+  import AnimationContent from "./AnimationContent.svelte";
 </script>
 
 <style>
@@ -15,4 +16,5 @@
 <div class="content">
   <SomeContent />
   <FetchedContent />
+  <AnimationContent />
 </div>

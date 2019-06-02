@@ -11,6 +11,7 @@
     padding: 1em;
     margin: 16px;
     min-width: 300px;
+    position: relative;
   }
 
   h3 {
@@ -18,7 +19,7 @@
   }
 </style>
 
-<div class="card" transition:fade={{ intro: true }} style="height: {height}px">
+<div class="card" style="height: {height}px">
   {#if title}
     <h3>{title}</h3>
   {/if}
